@@ -25,28 +25,46 @@ function App() {
 
   const isAuthenticated = true;
 
-  return (
-    <Layout>
-      <Suspense fallback={<Loader />}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/nannies" element={<NanniesPage />} />
-          {/* <Route
-              path="/favorites"
-              element={
-                // <PrivateRoute isAuthenticated={isAuthenticated}>
-                  <FavoritesPage />
-                </PrivateRoute>
-              }
-            /> */}
-          <Route element={<PrivateRoute isAuthenticated={isAuthenticated} />}>
-            <Route path="/favorites" element={<FavoritesPage />} />
-          </Route>
+  // return (
+  //   <Layout>
+  //     <Suspense fallback={<Loader />}>
+  //       <Routes>
+  //         <Route path="/" element={<HomePage />} />
+  //         <Route path="/nannies" element={<NanniesPage />} />
+  //         {/* <Route
+  //             path="/favorites"
+  //             element={
+  //               // <PrivateRoute isAuthenticated={isAuthenticated}>
+  //                 <FavoritesPage />
+  //               </PrivateRoute>
+  //             }
+  //           /> */}
+  //         <Route element={<PrivateRoute isAuthenticated={isAuthenticated} />}>
+  //           <Route path="/favorites" element={<FavoritesPage />} />
+  //         </Route>
 
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
-    </Layout>
+  //         <Route path="*" element={<NotFound />} />
+  //       </Routes>
+  //     </Suspense>
+  //   </Layout>
+  // );
+
+  return (
+    <Router>
+      <Layout>
+        <Suspense fallback={<Loader />}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/nannies" element={<NanniesPage />} />
+            <Route element={<PrivateRoute isAuthenticated={isAuthenticated} />}>
+              <Route path="/favorites" element={<FavoritesPage />} />
+            </Route>
+
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </Layout>
+    </Router>
   );
 }
 
