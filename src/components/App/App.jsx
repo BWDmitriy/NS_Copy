@@ -12,18 +12,16 @@ function App() {
 
   return (
     <Router>
-      <Layout>
-        <Suspense fallback={<Loader />}>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/nannies" element={<NanniesPage />} />
-            <Route element={<PrivateRoute isAuthenticated={isAuthenticated} />}>
-              <Route path="/favorites" element={<FavoritesPage />} />
-            </Route>
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </Layout>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/nannies" element={<NanniesPage />} />
+          <Route element={<PrivateRoute isAuthenticated={isAuthenticated} />}>
+            <Route path="/favorites" element={<FavoritesPage />} />
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
     </Router>
   );
 }
