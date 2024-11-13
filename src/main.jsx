@@ -29,10 +29,6 @@ import { ThemeProvider } from "../src/components/ThemeButton/ThemeContext";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <ThemeProvider>
-      <AuthProvider>
-        <App />
-      </AuthProvider>
-    </ThemeProvider>
+    <App />
   </StrictMode>
 );
