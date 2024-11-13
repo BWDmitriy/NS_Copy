@@ -1,5 +1,7 @@
-   {
-     "rewrites": [
-       { "source": "/(.*)", "destination": "/" }
-     ]
-   }
+{
+  "routes": [
+    { "src": "/", "dest": "/" },
+    { "src": "/nannies", "dest": "/" },
+    { "src": "/favorites", "dest": "/" }
+  ]
+}
