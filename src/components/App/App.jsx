@@ -19,9 +19,9 @@ import Layout from "../Layout/Layout";
 function App() {
   const { theme } = useTheme();
 
-  // useEffect(() => {
-  //   document.documentElement.setAttribute("data-theme", theme);
-  // }, [theme]);
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
 
   const isAuthenticated = true;
 
