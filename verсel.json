@@ -1,7 +1,6 @@
 {
-  "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/nannies", "dest": "/" },
-    { "src": "/favorites", "dest": "/" }
-  ]
+
+  "rewrites": [
+         { "source": "/(.*)", "destination": "/" }
+       ]
 }
