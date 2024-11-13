@@ -4,7 +4,7 @@ import NanniesPage from "../../pages/NanniesPage/NanniesPage";
 import FavoritesPage from "../../pages/FavoritesPage/FavoritesPage";
 import NotFound from "../../pages/NotFound/NotFound";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
-
+import Layout from "../Layout/Layout";
 function App() {
   const isAuthenticated = true; // Update this based on your auth logic
 
