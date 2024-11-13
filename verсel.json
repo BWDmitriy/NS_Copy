@@ -1,7 +1,6 @@
-
-
-     {
-       "rewrites": [
-         { "source": "/nannies", "destination": "/" }
-       ]
-     }
+{
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
+  ]
+} 
