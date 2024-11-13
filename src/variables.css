@@ -1,0 +1,16 @@
+/* colour variables */
+body {
+--primary-color-white  : #fbfbfb;
+  --primary-color-red: #f03f3b;
+  --primary-color-red-background: #f03f3b33;
+  --primary-color-blue: #0957c3;
+  --primary-color-blue-background: #0957c333;
+  --primary-color-green: #103931;
+  --primary-color-green-background: #10393133;
+  --primary-color-grey: #11101c80;
+  --primary-color-black:  #11101c;
+  --primary-color-light-grey:  #11101c4d;
+  --primary-color-light-grey-second:  #8a8a89;
+  --primary-border: 1px solid #fbfbfb66;
+--primary-bright-green: #38cd3e;
+}

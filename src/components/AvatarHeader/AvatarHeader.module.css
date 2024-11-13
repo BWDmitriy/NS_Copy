@@ -1,0 +1,35 @@
+.wrapper {
+    gap: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color-white); 
+
+}
+.avatar {
+    width: 16px;
+    height: 16px;
+    align-items: center;
+    fill: var(--primary-color);
+}
+.nannyNameDiv {
+    display: flex;
+    align-items: center;
+}
+.nannyName {
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.11111;
+letter-spacing: -0.01em;
+color: var(--primary-color-white);
+}

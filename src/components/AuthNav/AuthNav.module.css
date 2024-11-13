@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.logIn {
+    border: var( --primary-border);
+    border-radius: 30px;
+    padding: 14px 39px; 
+    width: 124px; 
+    height: 48px;
+    background-color: transparent;
+}
+.logIn:hover, .registration:hover {
+    background-color: var(--background-color);
+    color: var( --primary-color);
+}
+.registration {
+    border-radius: 30px;
+ padding: 14px 40px; 
+     width: 168px; 
+    height: 48px;
+    border: var( --primary-border);
+    background-color: transparent;
+
+}
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+     }
+     .logIn {
+        border: var( --primary-border);
+        border-radius: 30px;
+        padding: 0;
+        width: 50px;
+        height: 48px;
+        background-color: transparent;
+    }
+    .registration {
+        border-radius: 30px;
+        padding: 0;
+        width: 80px;
+        height: 48px;
+        border: var( --primary-border);
+        background-color: transparent;
+    
+    }
+     
+}

@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+.logIn {
+    border: 1px solid rgba(251, 251, 251, 0.4);
+    border-radius: 30px;
+    width: 124px;
+    height: 48px;
+    background-color: transparent;
+}
+.logIn:hover {
+    background-color: var(--background-color);
+    color: var( --primary-color);
+}
+
+@media screen and (max-width: 1439px) {
+    .logIn {
+        width: 85px;
+    height: 42px;
+    }}

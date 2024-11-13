@@ -1,0 +1,134 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    border-radius: 30px;
+width: 1376px;
+height: 736px;
+background: var(--primary-color);
+position: relative;
+
+}
+.header {
+position: absolute;
+    top: 3%;
+    right: -15%;
+   
+}
+.divider {
+    width: 1376px;
+    position: fixed;
+    top: 115px;
+    right: 7%;
+    margin-bottom: 45px;
+    stroke-width: 1px;
+    border-bottom: 1px solid rgba(251, 251, 251, 0.4);
+}
+.modal {
+    position: absolute;
+    top: 76%;
+    right: 15%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.mainInfo {
+    margin-top: 260px;
+    margin-left: 102px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+font-weight: 500;
+font-size: 70px;
+line-height: 1;
+letter-spacing: -0.03em;
+width: 517px;
+margin-bottom: 28px;
+}
+.paragraph {
+font-size: 28px;
+line-height: 1.07143;
+letter-spacing: -0.02em;
+margin-bottom: 64px;
+}
+.btnGetStarted {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    background: transparent;
+    border: 1px solid rgba(251, 251, 251, 0.4);
+    border-radius: 30px;
+    padding: 16px 48px;
+    width: 230px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    gap: 18px;
+    align-items: center;
+}
+.btnGetStarted:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+.icon {
+    width: 15px;
+    height: 17px;
+    fill: var(--primary-color-white);
+} 
+.icon {
+    fill: var(--primary-color);
+}
+.backgroundImage {
+    background-image:url(../../images/backgraund1x.png);
+    border-radius: 0 30px 30px 0;
+    width: 699px;
+    height: 736px;
+}
+@media screen and (max-width: 1439px) {
+ .header{
+    padding: 27px;
+    }
+    .wrapper {
+width: 618px;
+}
+.modal {
+    top: 77%;
+    right: 19%;
+}
+.mainInfo {
+    margin-top: 236px;
+    margin-left: 22px;
+}
+ }
+
+       @media screen and (max-width: 767px) {
+        .wrapper {
+            width: 319px;        }
+           .header {
+            margin-bottom: 15px;
+            top: 1%;
+            right: -2%;               }
+           .title {
+            font-size: 27px;
+           }
+           .modal {
+            top: 69%;
+            right: 16%;
+    
+           }
+           .title {
+            width: 265px;
+            font-size: 15px;
+           }
+        .paragraph {
+font-size: 15px;        }
+       }
+       

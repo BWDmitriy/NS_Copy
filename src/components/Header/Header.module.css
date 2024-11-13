@@ -1,0 +1,159 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1440px;   
+    height: 48px;
+    border: none;
+    background: transparent;
+    position: relative;
+} 
+.themeButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.logo {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.02em;
+}
+.navigationDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 72px;
+}
+.navigation {
+    gap: 45px;    display: flex;
+flex-direction: row;  
+justify-content: space-between;  
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+.ellipseDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iconEllipse {
+    width: 8px;
+    height: 8px;
+}
+.active {
+fill: aqua;
+}
+.block {
+    display: none;
+
+}
+.btn {
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+font-weight: 500;
+line-height: 1.25;
+letter-spacing: -0.01em;
+background-color: transparent;
+}
+.logIn {
+    border: var(  --primary-border);
+    border-radius: 30px;
+    padding: 14px 39px;
+    width: 124px;
+    height: 48px;
+    background-color: transparent;
+}
+.registration {
+    border-radius: 30px;
+    padding: 14px 40px;
+    width: 168px;
+    height: 48px;
+    border: var(  --primary-border);
+    background-color: transparent;
+
+}
+.registration:hover {
+    background: var(--primary-color-red);
+border: none;
+color: var(--primary-color-white);
+}
+.logIn:hover {
+    background: var(--primary-color-red);
+    border: none;
+    color: var(--primary-color-white);
+}
+
+
+@media screen and (max-width: 1439px) {
+ .wrapper {
+    justify-content: space-around;
+    width: 692px; }
+
+ .logo {
+    font-size: 14px;
+ }
+ .navigationDiv {
+    gap: 30px;
+
+ }
+ .navigation {
+    gap: 3px;
+        display: flex;
+    flex-direction: column;
+ }
+ .themeButton{
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-right: 16px;
+ }
+ .ellipseDiv {
+    flex-direction: row;
+    gap: 15px;
+ }
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+        justify-content: space-around;
+        /* width: 350px; */
+        width: 290px;
+    } 
+     .logo {
+        font-size: 10px;
+     }
+     .navigationDiv {
+        gap: 9x;
+     }
+     .navigation {
+        gap: 6px;
+        display: flex;
+        flex-direction: column;
+     }
+     .btn {
+        justify-content: center;
+
+     }
+     
+     .registration {
+          padding: 0px;
+          width: 0px;
+    height: 0;
+     }
+     .navigationDiv {
+gap: 20px;    
+flex-direction: column; }
+.logo {
+    display: none;
+}
+.navigation {
+    flex-direction: row;
+}
+}
+.activeLink:hover{
+border: 1px solid var(--background-color);
+}

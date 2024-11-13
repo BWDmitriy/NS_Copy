@@ -1,0 +1,200 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 11, 11, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+ .container {
+    border-radius: 30px;
+    width: 483px;
+    background: var(--primary-color-white);
+    padding: 50px 31px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+
+}
+.iconClose {
+    position: absolute;
+    stroke:  #11101c;
+    top: 4%;
+    right: 6%;
+    width: 20px;
+    height: 20px;
+    transition: var(--animation-hover);
+    cursor: pointer;
+}
+.iconClose:hover {
+    stroke: var(--primary-color)
+
+}
+.titleDiv {
+    align-items: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+.mainTitle {
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 40px;
+line-height: 1.2;
+letter-spacing: -0.02em;
+color: #11101c;
+}
+.summary {
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+color: rgba(17, 16, 28, 0.5);
+}
+.personalInformation {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+.yourNanny {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+}
+.yourNannyTitle {
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.33333;
+color: var(  --primary-color-light-grey-second)
+}
+.yourNannyName {
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+color: var( --primary-color-black);
+}
+.nannyName  {
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+color: var( --primary-color-black);
+}
+.avatar {
+    border-radius: 15px;
+    width: 44px;
+    height: 44px;
+border: none}
+.form {
+    display: flex;
+    flex-direction: column;
+
+}
+.someInfoDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;}
+.someInfo {
+    border: 1px solid rgba(17, 16, 28, 0.1);
+border-radius: 12px;
+padding: 18px;
+width: 196px;
+/* height: 52px; */
+font-family: "Helvetica Neue", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+color: var( --primary-color-black);
+transition: var(--animation-hover);
+    cursor: pointer;
+
+}
+.someInfo:hover, .parents:hover, .comment:hover {
+    border: 1px solid var(--primary-color)
+}
+.iconClock {
+    width: 20px;
+    height: 20px;
+    stroke: var(--primary-color-black);
+    fill: var( --primary-color-white);
+    position: absolute;
+    top: 48%;
+    right: 12%;
+}
+.clock {
+    position: relative;
+    transition: var(--animation-hover);
+    cursor: pointer;
+}
+.clock:hover {
+    stroke: var(--primary-color);
+}
+.parents {
+    border: 1px solid rgba(17, 16, 28, 0.1);
+    border-radius: 12px;
+    padding: 16px 256px 16px 18px;
+    /* width: 272px; */
+    /* height: 52px; */
+font-family: "Helvetica Neue", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+color: var(--primary-color-black);
+transition: var(--animation-hover);
+
+}
+.comment {
+    border: 1px solid rgba(17, 16, 28, 0.1);
+    border-radius: 12px;
+    padding: 16px 16px 54px 18px;
+    width: 440px;
+    /* height: 116px; */
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+color: var(--primary-color-black);
+transition: var(--animation-hover);
+
+}
+.btn {
+    border-radius: 30px;
+padding: 16px 217px;
+width: 472px;
+height: 52px;
+background: var(  --primary-color);
+font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: -0.01em;
+color: var(color);
+border: none;
+transition: var(--animation-hover) ;
+margin-top: 24px;
+}
+.btn:hover {
+
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        background-color: transparent;
+    }
+
+    .errorMessage {
+display: flex;
+flex-direction: column;    }
+.error {
+    color: red;
+}

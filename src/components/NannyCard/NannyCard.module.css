@@ -1,0 +1,304 @@
+.wrapper {
+    border-radius: 24px;
+width: 1134px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+background: var(--primary-color-white);
+border: none;
+display: flex;
+flex-direction: row;
+padding: 25px;
+gap: 25px;
+}
+.img {
+    border: var(--primary-color-border);
+    border-radius: 30px;
+width: 120px;
+height: 120px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.avatar {
+    border-radius: 15px;
+width: 96px;
+height: 96px;
+background-position: center;
+background-size: contain;
+
+}
+.mainInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 1000px;
+}
+.firstLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nameDiv {
+height: 56px;
+display: flex;
+flex-direction: column;
+text-align: justify;
+}
+.nanny {
+font-weight: 500;
+line-height: 1.5;
+color: var(--primary-color-light-grey-second);
+}
+.name {
+font-weight: 500;
+font-size: 24px;
+line-height: 1;
+color: var(--primary-color-black);
+}
+.container {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 50px;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+height: 24px;
+}
+.locationDiv {
+    display: flex;
+    flex-direction: row;
+    border-right: 1px solid rgba(17, 16, 28, 0.2);
+padding-right: 10px;
+gap: 5px;
+
+}
+.iconLocation {
+    stroke-width: 2px;
+stroke: #11101c;
+width: 26px;
+height: 22px;
+fill: var( --primary-color-white);
+}
+.location {
+font-weight: 500;
+line-height: 1.5;
+color: var(--primary-color-black);
+}
+.ratingDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: 1px solid rgba(17, 16, 28, 0.2);
+    padding-right: 10px;
+    padding-left: 10px;
+    gap: 5px;
+
+
+}
+.rating {
+width: 16px;
+height: 16px;
+}
+.priceDiv {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+
+}
+.priceParagraph {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+color: var(--primary-color-black);
+}
+
+.priceSpan {
+    color: var(--primary-bright-green);
+}
+.iconLike {
+    fill: var(--primary-color-white);
+    width: 26px;
+    height: 22px;
+    stroke: var(--primary-color-black);
+}
+.personalInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+.personalInfoParagraph {
+    display: flex;
+    flex-direction: row;
+    background: var(--background-color);
+    border-radius: 24px;
+padding: 8px 16px;
+color:var(--primary-color-light-grey-second);
+gap: 5px;
+
+}
+.age {
+    text-decoration: underline;
+}
+.details {
+    color: var(--primary-color-black);
+}
+.summary {
+font-size: 16px;
+line-height: 1.25;
+color: var(--primary-color-grey);
+text-align: justify;
+
+}
+.readMoreBtnDiv {
+    display: flex;
+
+}
+
+.readMoreBtn {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: var(--primary-color-black);
+text-align: justify;
+border: none;
+background-color: transparent;
+padding: 0;
+}
+.readMoreBtn:hover {
+   
+        color: var(--primary-color);
+}
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    margin-top: 50px;
+
+}
+.reviewDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.reviewAvatar {
+    border-radius: 100px;
+    width: 44px;
+    height: 44px;
+    background: var(--primary-color-reviewer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviewAvatarName {
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 20px;
+line-height: 1;
+color: var(--primary-color-reviewer-name);
+}
+.reviewComment {
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+color: var(--primary-color-grey);
+}
+.nameReviewer{
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.28571;
+color: #11101c;
+}
+.ratingDivReview {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    gap: 5px;
+}
+.appointmentBtn {
+    border: none;
+    text-align: start;
+    border-radius: 30px;
+padding: 14px 28px;
+width: 215px;
+height: 48px;
+background: var(--primary-color);
+font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: -0.01em;
+color:var(--primary-color-white);
+margin-top: 25px;
+}
+.appointmentBtn:hover {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+}
+@media screen and (max-width: 1439px) {
+.wrapper {
+    width: 600px;
+    flex-direction: column;
+
+}
+.personalInfo {
+width: auto;
+}
+.firstLine {
+    flex-direction: column;
+}
+.mainInfo {
+    width: 600px;
+    gap: 2px;
+}
+.img {
+    width: 107px;
+    height: 103px;
+}
+.avatar {
+    width: 86px;
+    height: 86px;
+}
+.reviews
+ {
+    gap: 0px;
+    margin-top: 18px;
+ }
+
+}
+   @media screen and (max-width: 767px) {
+.container {
+    gap: 19px;
+}
+    .wrapper {
+        width: 204px;    
+    }
+    .info {
+        flex-direction: column;
+        margin-bottom: 91px;    }
+    .mainInfo {
+        width: 211px;        margin-top: -23px;
+        margin-left: -3px;
+        flex-direction: column;
+    }
+    .personalInfoParagraph {
+        padding: 2px 5px;
+        flex-direction: column;
+            }
+            .personalInfo {
+                gap: 6px;
+            }
+   }
+   

@@ -1,0 +1,135 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 11, 11, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+.wrapper {
+    border-radius: 30px;
+    background: var(--primary-color-white);
+padding: 47px 35px 7px 47px;display: flex;
+    justify-content: center;
+
+}
+.mainInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+    width: 438px;
+}
+
+.closeBtn {
+    position: relative;
+}
+.iconClose {
+    width: 20px;
+    height: 20px;
+    stroke:var(--primary-color-black);
+    position: absolute;
+    top: -2%;
+    left: 419px;
+    transition: var(--animation-hover) ;
+    cursor: pointer;
+}
+.iconClose:hover {
+    stroke: var(--primary-color)
+
+}
+.registrationParagraphDiv {
+display: flex;
+flex-direction: column;
+gap: 20px;
+text-align: justify;
+}
+.registrationParagraph {
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 40px;
+line-height: 1.2;
+letter-spacing: -0.02em;
+color: var(--primary-color-black);
+}
+.registrationParagraphDescription {
+font-size: 16px;
+line-height: 1.25;
+color: var(--primary-color-grey);
+}
+.btnDiv {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    border-radius: 30px;
+    padding: 16px 190px;
+    width: 438px;
+    height: 52px;
+    background: var(--primary-color); 
+font-weight: 500;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: -0.01em;
+color: var(--primary-color-white);
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+transition: var(--animation-hover) ;
+
+}
+.btn:hover {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;}
+
+/* form */
+.form {
+    width: 438px;
+display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.inputs {
+    border: 1px solid rgba(17, 16, 28, 0.1);
+border-radius: 12px;
+padding: 16px 261px 16px 18px;
+transition: var(--animation-hover);
+
+}
+.inputs:hover, .inputs:focus {
+    border: var(--primary-color)
+
+}
+.eye {
+    position: relative;
+
+}
+.iconEyeOff{
+    width: 20px;
+    height: 16px;
+    fill: var(--primary-color-white);
+    stroke: var(--primary-color-black);
+    position: absolute;
+    top: 55%;
+    left: 63%;
+
+}
+
+@media screen and (max-width: 1439px) {
+.logIn {
+    
+}
+   }
+   @media screen and (max-width: 767px) {
+       .mainInfo {
+        width: 297px;
+        gap: 10px;
+       }
+     
+   }
+   
