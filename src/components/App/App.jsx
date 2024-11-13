@@ -6,6 +6,7 @@ import NotFound from "../../pages/NotFound/NotFound";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Layout from "../Layout/Layout";
 import { Suspense } from "react";
+import Loader from "../Loader/Loader";
 function App() {
   const isAuthenticated = true; // Update this based on your auth logic
 
