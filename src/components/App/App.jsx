@@ -30,7 +30,7 @@ function App() {
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/nannies" element={<NanniesPage />}></Route>
+          <Route path="/nannies" element={<NanniesPage />} />
           {/* <Route
               path="/favorites"
               element={
