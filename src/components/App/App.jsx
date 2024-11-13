@@ -1,14 +1,29 @@
+import { Suspense, lazy } from "react";
+import { useEffect } from "react";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "../../pages/HomePage/HomePage";
-import NanniesPage from "../../pages/NanniesPage/NanniesPage";
-import FavoritesPage from "../../pages/FavoritesPage/FavoritesPage";
-import NotFound from "../../pages/NotFound/NotFound";
-import PrivateRoute from "../PrivateRoute/PrivateRoute";
-import Layout from "../Layout/Layout";
-import { Suspense } from "react";
+
 import Loader from "../Loader/Loader";
+import NotFound from "../../pages/NotFound/NotFound";
+const HomePage = lazy(() => import("../../pages/HomePage/HomePage"));
+const NanniesPage = lazy(() => import("../../pages/NanniesPage/NanniesPage"));
+const FavoritesPage = lazy(() =>
+  import("../../pages/FavoritesPage/FavoritesPage")
+);
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import { useTheme } from "../ThemeButton/ThemeContext";
+
+import "../App/App.css";
+import Layout from "../Layout/Layout";
+
 function App() {
-  const isAuthenticated = true; // Update this based on your auth logic
+  const { theme } = useTheme();
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const isAuthenticated = true;
 
   return (
     <Router>
@@ -16,9 +31,11 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/nannies" element={<NanniesPage />} />
+
           <Route element={<PrivateRoute isAuthenticated={isAuthenticated} />}>
             <Route path="/favorites" element={<FavoritesPage />} />
           </Route>
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
