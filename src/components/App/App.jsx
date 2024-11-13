@@ -17,7 +17,7 @@ import "../App/App.css";
 import Layout from "../Layout/Layout";
 
 function App() {
-  const { theme } = useTheme(); 
+  const { theme } = useTheme();
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -26,14 +26,12 @@ function App() {
   const isAuthenticated = true;
 
   return (
-      <Router>
-      <Layout>
-        <Suspense fallback={<Loader />}>
+    <Layout>
+      <Suspense fallback={<Loader />}>
         <Routes>
-
-            <Route path="/" element={<HomePage />} />
-            <Route path="/nannies" element={<NanniesPage />}></Route>
-            {/* <Route
+          <Route path="/" element={<HomePage />} />
+          <Route path="/nannies" element={<NanniesPage />}></Route>
+          {/* <Route
               path="/favorites"
               element={
                 // <PrivateRoute isAuthenticated={isAuthenticated}>
@@ -41,17 +39,14 @@ function App() {
                 </PrivateRoute>
               }
             /> */}
-<Route element={<PrivateRoute isAuthenticated={isAuthenticated} />}>
+          <Route element={<PrivateRoute isAuthenticated={isAuthenticated} />}>
             <Route path="/favorites" element={<FavoritesPage />} />
           </Route>
 
-            <Route path="*" element={<NotFound />} />
-            </Routes>
-
-        </Suspense>
-      </Layout>
-      </Router>
-
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
+    </Layout>
   );
 }
 
