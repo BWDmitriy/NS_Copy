@@ -11,11 +11,11 @@ import App from "./components/App/App";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ThemeProvider>
-      <AuthProvider>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </AuthProvider>
+      {/* <AuthProvider> */}
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+      {/* </AuthProvider> */}
     </ThemeProvider>
   </StrictMode>
 );
