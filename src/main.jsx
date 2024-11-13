@@ -28,7 +28,10 @@ import { AuthProvider } from "./services/AuthContext";
 import { ThemeProvider } from "../src/components/ThemeButton/ThemeContext";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+  <AuthProvider>
+    {" "}
+    <StrictMode>
+      <App />
+    </StrictMode>
+  </AuthProvider>
 );
